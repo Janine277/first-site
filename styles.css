@@ -5,7 +5,6 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 top:0;
-background-color: blueviolet;
 }
 nav{
     width:50%;
@@ -19,6 +18,7 @@ nav > ul{
     align-items: center;
     padding-inline-start: 0;
     height:100%;
+    font-size:18px;
     margin-block: 0;
 }
 #logo{
@@ -30,72 +30,139 @@ nav > ul > li{
     margin:0 0.2rem;
     padding:0.2rem;
     display:block; }
-section{
-    width:80%
-    margin:0 auto 10px auto;
-    padding-top:150px;
-    max-width:600px;
-background-color:cyan;
+*{
+    padding:0%;
+    margin:0%;
+box-sizing: border-box;
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-
-.foodpics{
+header,.top-page,.foodpics,.quote-section,.cta,.footer{
+    border:1px solid black;
     display:flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.img{
-    display:flex;
+.footer,header,.top-page{
+background-color:green;
+color:white;
+}
+.top-page,.foodpics,.quote-section,.cta,.footer{
     justify-content: center;
-    flex-direction: column;
-    flex-grow:1;
-}
-.photo{
-    display:block;
-    width:300px;
-    padding:10px;
-    border-radius:45px;
-}
-.caption{
-display:block;
-width:100%;
-text-align:center;
-}
-h3{
-text-align:right;
-}
-.top-pic{
-width:30%;
-display:flex;
-float:right;
-padding-left:200px;
+    width:100%;
 }
 .top-page{
-    position:absolute;
-    width:70%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 300px;
 }
-footer{
-    background-color: blueviolet;
-    width:100%;
-height:50px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-top:0;
+.top-text{
+    padding-left: 300px;
+}
+.top-pic{
+    width:200px;
+    float:left;
+    padding-right: 40px;
+}
+h2{
+font-size:48px;
+font-weight:900;
+color:#e5e7eb;
+}
+.secondary-text{
+font-size:18px;
+color:white;
+width:450px;
+}
+.button1{
+    background-color: #3882f6;
+    color:white;
+    padding:6px 35px;
+    border:none;
+    border-radius:8px;
+    font-weight:700;
+    font-size:18px;
+}
+.foodpics{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 500px;
+}
+.info-gallery{
+    display:flex;
+    gap:40px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex:1;
+}
+.photo{
+    width:300px;
+    border-radius: 10px;
+}
+.img{
+    width:300px;
+}
+h3{
+    font-size:36px;
+    font-weight:900;
+    padding:16px 0;
+    color:#1f2937
+}
+.caption{
+    font-size: 18px;
+}
+.quote{
+    width:50%
+}
+.quote-container{
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+blockquote{
+    font-size: 36px;
+    font-weight:100;
+    color: #1f2937;
+}
+figcaption{
+    text-align: right;
+    font-weight: 700;
+    font-size: 18px;
 }
 .cta{
-    background-color: pink;
-    width:700px;
-height:50px;
-padding:30px;
+min-height: 450px;
 align-items: center;
 }
-h4,.goodfood{
-    padding:0;
-    margin:0;
+.sign-up-container{
+    background-color: #3882f6;
+    height:180px;
+    width:800px;
+    color: white;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .button2{
-    display: flex;
-    float:right ;
+    background-color: #3882f6;
+    color:white;
+    padding:6px 35px;
+    border:none;
+    border-radius:8px;
+    font-weight:700;
+    font-size:18px;
+    border:2px solid white;
 }
-
-
+.footer{
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    top:0; 
+}
